@@ -2,10 +2,12 @@
 {
     public class Person
     {
-        public string lastName {  get; set; }
-        public string firstName { get; set; }
+        //? allow null
+        //! not allow null
+        public string ? lastName {  get; set; }
+        public string ? firstName { get; set; }
         public int age { get; set; }
-        public string gender { get; set; }
+        public string ? gender { get; set; }
 
         public string toString()
         {

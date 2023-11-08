@@ -32,6 +32,6 @@ namespace WebApiAssignment.Controllers
         {
             return Ok(person.toString() + Environment.NewLine+ "Good try !!");
         }
-        //seems like HttpGet can not use [FromBody] (?
+        //HttpGet can not use [FromBody]
     }
 }

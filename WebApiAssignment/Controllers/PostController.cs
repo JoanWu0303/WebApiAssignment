@@ -12,10 +12,10 @@ namespace WebApiAssignment.Controllers
         [HttpPost("class")]
         public Person postClass ([FromBody] Person person)
         {
-            string lastN = person.lastName;
-            string firstN=person.firstName;
+            string ? lastN  = person.lastName;
+            string ? firstN=person.firstName;
             int age=person.age;
-            string gender=person.gender;
+            string ? gender=person.gender;
 
             Person person1 = new Person();
             person1.lastName = lastN + "_hello";
@@ -25,7 +25,7 @@ namespace WebApiAssignment.Controllers
 
             return person1;
         }
-
+          
         [HttpPost("iAction")]
         public IActionResult postIAction([FromBody] Person person)
         {
@@ -36,10 +36,10 @@ namespace WebApiAssignment.Controllers
                 if (person.age <=18) throw new Exception("age should older than 18");
                // if (person.gender == null) throw new Exception("gender should not be null");
                
-                string lastN = person.lastName;
-                string firstN = person.firstName;
+                string ? lastN = person.lastName;
+                string ? firstN = person.firstName;
                 int age = person.age;
-                string gender = person.gender;
+                string ? gender = person.gender;
 
                 Person person1 = new Person();
                 person1.lastName = lastN + "_hello";
